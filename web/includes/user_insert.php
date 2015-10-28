@@ -3,6 +3,7 @@ include("includes/connection.php");
 
 if(isset($_POST['sign_up']))
     {
+        $img = mysqli_real_escape_string($con,$_POST['u_img']);
         $name = mysqli_real_escape_string($con,$_POST['u_name']);
         $pass = mysqli_real_escape_string($con,$_POST['u_pass']);
         $email = mysqli_real_escape_string($con,$_POST['u_email']);
@@ -33,7 +34,7 @@ if(isset($_POST['sign_up']))
             $passwordmd5 = md5($pass);
             $insert = "insert into users (user_name, 
             user_pass,user_email,user_country,user_gender,user_b_day,user_image,register_date,last_login,status,posts) 
-            values ('$name','$passwordmd5','$email','$country','$gender','$b_day','images/default.jpg',NOW(),NOW(),'$status','$posts')";
+            values ('$name','$passwordmd5','$email','$country','$gender','$b_day','$img',NOW(),NOW(),'$status','$posts')";
                 
             $run_insert = mysqli_query($con,$insert);
                 

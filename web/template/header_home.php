@@ -14,6 +14,11 @@
             <div class="logo">
                 <img src="images/wanderlust_white.png">
             </div>
-            <h1 class="welcome">Welcome: <?php echo $_SESSION['user_email'] ?></h1>
-            <h1 class="welcome"><?php echo $_SESSION['user_name'] ?></h1>
+            <h1 class="welcome">Welcome <?php echo $_SESSION['user_name'] ?>!</h1>
+            <h1 class="welcome">Your Profile Info:</h1>
+            <h1 class="profile">Name: <?php echo $_SESSION['user_name'] ?></h1>
+            <h1 class="profile">Email: <?php echo $_SESSION['user_email'] ?></h1>
+            <h1 class="profile">Gender: <?php echo $_SESSION['user_gender'] ?></h1>
+            <h1 class="profile">Country: <?php echo $_SESSION['user_country'] ?></h1>
+            <?php echo "<img src=template/get.php?id=".$_SESSION['user_id'].">";?>
         </header>
