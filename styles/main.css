@@ -1,0 +1,144 @@
+/* #e2e5ec #b8c4d2 #587175 #32444e #292428 #45653c*/
+/*-------------------------------------------------PAGE-----*/
+body
+{
+    font: 12pt "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------------------------------HEADER-----*/
+header
+{
+    background-color: #292428;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+}
+
+.welcome
+{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.logo img
+{
+    float: left;
+    width: 90%;
+    padding: 6% 5% 6% 5%;
+}
+
+#loginform
+{
+    color: #ffffff;
+    display: inline-block;
+    padding: 5% 45% 5% 30%;
+    max-width: 40%;
+    text-align: center;
+}
+
+.registerButton 
+{
+    margin: 5% 45% 5% 38%;
+}
+
+.userbutton
+{
+    margin: 5% 45% 5% 35%;
+    width: 30%;
+}
+
+a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------SECTIONS-----*/
+section
+{
+    margin-left: 28%;
+    display: inline-block;
+}
+
+.error
+{
+    color: red;
+    text-align: center;
+}
+
+.post
+{
+    display: inline-block;
+    max-width: 29%;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+.post img
+{
+    max-width: 100%;
+    margin: 0;
+}
+
+/*-------------------------------------------------DIALOG-----*/
+.demoHeaders {
+		margin-top: 2em;
+	}
+
+#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+
+#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+
+#icons {
+		margin: 0;
+		padding: 0;
+	}
+
+#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+
+#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+
+.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+
+select {
+		width: 200px;
+	}
+    
+label, input { 
+        display:block; 
+    }
+        
+input.text { 
+        margin-bottom:12px; width:95%; padding: .4em; 
+    }
+        
+fieldset { 
+        padding:0; border:0; margin-top:25px; 
+    }
