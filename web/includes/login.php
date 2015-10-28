@@ -14,8 +14,12 @@ if(isset($_POST['login']))
     if($check==1)
     {
         $row = $run_user->fetch_array(MYSQLI_ASSOC);
-        $_SESSION['user_email']=$row['user_email'];
+        $_SESSION['user_id']=$row['user_id'];
         $_SESSION['user_name']=$row['user_name'];
+        $_SESSION['user_email']=$row['user_email'];
+        $_SESSION['user_gender']=$row['user_gender'];
+        $_SESSION['user_country']=$row['user_country'];
+        $_SESSION['user_image']=$row['user_image'];
         
         echo "<script>window.open('home.php','_self')</script>";
     }
@@ -24,6 +28,8 @@ if(isset($_POST['login']))
     {
         echo "<h3 class='error'>Email or Password incorrect</h3>";
     }
+    
+    
 }
 
 ?>
